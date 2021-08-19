@@ -32,7 +32,7 @@ z_plot_1 = torch.Tensor([])
 
 f_1 = lorenz_attractor(x_0,y_0,z_0)
 f_2 = lorenz_attractor(x_0+0.1,y_0+0.1,z_0+0.1)
-plt.pause(10)
+
 while(True):
     x,y,z = next(f_1)
     x_1,y_1,z_1 = next(f_2)
